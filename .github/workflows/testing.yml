@@ -1,10 +1,10 @@
-name: Testing
+name: Rest Dev Branch to Master
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 1 * * *"
 jobs:
   reset:
-    name: "Reset Dev Branch to Master"
+    name: Runner
     runs-on: ubuntu-latest
     steps:
       - name: Reset dev branch to master
