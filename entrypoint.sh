@@ -27,8 +27,8 @@ git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHU
 
 git fetch
 
-git checkout "${RESET_BRANCH}"
+git checkout $RESET_BRANCH
 
-git reset --hard "${BASE_BRANCH}"
+git reset --hard $BASE_BRANCH
 
-git push --force origin "${RESET_BRANCH}"
+git push --force origin $RESET_BRANCH
