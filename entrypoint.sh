@@ -2,6 +2,7 @@
 
 BASE_BRANCH=$1
 RESET_BRANCH=$2
+GITHUB_TOKEN=$3
 
 if [[ -z "${BASE_BRANCH}" ]]; then
   echo "Missing \$BASE_BRANCH"
@@ -18,12 +19,13 @@ echo "RESET_BRANCH=${RESET_BRANCH}"
 
 
 mkdir _tmp && cd _tmp
+
 git init
 
 git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
-git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
 git fetch
 

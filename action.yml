@@ -18,6 +18,7 @@ runs:
   args:
     - ${{ inputs.base_branch }}
     - ${{ inputs.reset_branch }}
+    - ${{ inputs.github_token }}
 branding:
   icon: "git-merge"
   color: "gray-dark"
