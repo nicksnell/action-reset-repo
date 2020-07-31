@@ -1,13 +1,13 @@
 name: Testing
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
 jobs:
   reset:
     name: "Reset Dev Branch to Master"
     runs-on: ubuntu-latest
     steps:
       - name: Reset dev branch to master
-        uses: nicksnell/action-reset-repo@main
+        uses: nicksnell/action-reset-repo@master
         with:
           reset_branch: dev
