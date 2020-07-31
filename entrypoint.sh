@@ -29,6 +29,6 @@ git fetch
 
 git checkout $RESET_BRANCH
 
-git reset --hard $BASE_BRANCH
+git reset --hard "origin/${BASE_BRANCH}"
 
 git push --force origin $RESET_BRANCH
