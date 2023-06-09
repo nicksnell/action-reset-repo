@@ -8,7 +8,7 @@ inputs:
   base_branch:
     description: "Branch you want to use as the base to reset too"
     required: true
-    default: "master"
+    default: "main"
   reset_branch:
     description: "Branch you want to reset"
     required: true
