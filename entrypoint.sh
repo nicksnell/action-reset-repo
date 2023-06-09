@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/sh
 
 BASE_BRANCH=$1
 RESET_BRANCH=$2
@@ -18,7 +18,7 @@ echo "BASE_BRANCH=${BASE_BRANCH}"
 echo "RESET_BRANCH=${RESET_BRANCH}"
 
 
-mkdir _tmp && cd _tmp
+mkdir -p /tmp/_tmp && cd /tmp/_tmp
 
 git init
 
