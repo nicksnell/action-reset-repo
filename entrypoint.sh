@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/sh
 
 BASE_BRANCH=$1
 RESET_BRANCH=$2

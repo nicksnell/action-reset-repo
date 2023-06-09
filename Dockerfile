@@ -1,7 +1,6 @@
-FROM ubuntu:18.04
-
-RUN apt-get update && apt-get install -y git
+FROM alpine/git
 
 COPY entrypoint.sh /entrypoint.sh
+RUN  chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
